@@ -219,29 +219,51 @@
         </div>
         -->
 
-        <div class="payment" id="paymentForm">
-            <h1 class="payTitle">Personal Information</h1>
-            <label>Name and Surname</label>
-            <input type="text" placeholder="Gaurav Tiwari" class="payInput">
-            <label>Phone Number</label>
-            <input type="text" placeholder="+91 6392 00 0000" class="payInput">
-            <label>Address</label>
-            <input type="text" placeholder="Axis Colleges, Kanpur" class="payInput">
-            
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="visa.png" width="40" alt="" class="cardIcon">
-                <img src="master.png" width="40" alt="" class="cardIcon">
-            </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
-            </div>
-            <button class="payButton" id="checkoutButton">Checkout!</button>
-            <span class="close">X</span>
-        </div>
+    <form class="payment" id="paymentForm" action="#nav" >
+     <div>
+     <h1 class="payTitle">Personal Information</h1>
+     <label>Username</label>
+     <input type="text" placeholder="Enter Fullname" 
+      class="payInput" required/>
+     <label>Phone Number</label>
+     <input type="tel" placeholder="Enter Phone Number" 
+      class="payInput" maxlength="10" required/>
+     <label>Local Address</label>
+     <input type="text" placeholder="Enter Address" 
+      class="payInput" required/>
+     <label>City</label>
+     <input type="text" placeholder="Enter City Name" 
+      class="payInput" required/>
+     <label>State</label>
+     <input type="text" placeholder="Enter State Name" 
+      class="payInput" required/>
+     <label>Pincode</label>
+     <input oninput="javascript:if(this.value.length>this.
+      maxLength) this.value=this.value.slice(0,this.
+      maxLength)" type="number" placeholder="Enter Pincode" 
+      class="payInput" maxlength="6" required/>
+     <h1 class="payTitle">Card Information</h1>
+     <div class="cardIcons">
+         <img src="visa.png" width="40" alt="" 
+        class="cardIcon">
+         <img src="master.png" width="40" alt="" 
+          class="cardIcon">
+     </div>
+     <input type="password" class="payInput" 
+      placeholder="Card Number">
+     <div class="cardInfo">
+         <input type="text" placeholder="mm" 
+        class="payInput sm">
+         <input type="text" placeholder="yyyy" 
+      class="payInput sm">
+         <input type="text" placeholder="cvv" 
+      class="payInput sm">
+     </div>
+     <input type="submit" class="payButton" 
+id="checkoutButton" value="Checkout!">
+     <span class="close">X</span>
+     
+ </form>
         
         
       
