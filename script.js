@@ -130,6 +130,8 @@ const close = document.querySelector(".close");
 
 productButton.addEventListener("click", () => {
   payment.style.display = "flex";
+  payment.style.height = "600px";
+  payment.style.width= "500px";
 });
 
 close.addEventListener("click", () => {
