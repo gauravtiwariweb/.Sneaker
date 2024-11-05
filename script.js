@@ -124,16 +124,19 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
+
 const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
+const overlay = document.getElementById('overlay');
 
 productButton.addEventListener("click", () => {
-  payment.style.display = "flex";
   payment.style.height = "600px";
-  payment.style.width= "500px";
+  payment.style.width = "500px";
+  overlay.classList.add('visible');
+
 });
 
 close.addEventListener("click", () => {
-  payment.style.display = "none";
+  overlay.classList.remove('visible');
 });
